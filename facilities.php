@@ -1,6 +1,6 @@
 <!-- Bootstrap CSS -->
 <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/themify-icons/1.0.1/css/themify-icons.css">
+<link rel="stylesheet" href="vendor/themify-icons/themify-icons.css">
 
 <style>
   /* CSS for Facilities Section */

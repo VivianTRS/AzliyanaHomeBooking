@@ -1,0 +1,141 @@
+/* Reset some default styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.list-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.left-col {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form-header {
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 50px;
+    color: #333;
+}
+
+.house-choosen {
+    display: flex;
+    flex-direction: column;
+}
+
+.house-choosen-img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.choosen-house-info p {
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.choosen-house-info strong {
+    color: #333;
+}
+
+h3 {
+    font-size: 20px;
+    margin-top: 15px;
+    color: #333;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.choosen-house-info li {
+    padding: 5px 0;
+}
+
+.choosen-house-info i {
+    color: #f39c12; /* Star color */
+    margin-right: 5px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.button--active {
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+}
+
+.house-choosen img {
+    width: 100%; /* Ensure images are responsive */
+    border-radius: 5px;
+}
+
+/* Responsive Styles */
+@media (min-width: 768px) {
+    .house-choosen {
+        flex-direction: row;
+    }
+    
+    .house-choosen-img {
+        width: 50%;
+        margin-right: 20px;
+    }
+
+    .choosen-house-info {
+        width: 50%;
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    .button {
+        padding: 8px 10px;
+    }
+}

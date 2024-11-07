@@ -1,0 +1,20 @@
+.form-group label {
+    font-weight: bold; /* Bold labels for emphasis */
+    margin-bottom: 0; /* Remove bottom margin to align with inputs */
+}
+
+.form-group.row {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+}
+
+.form-control {
+    border-color: gray; /* Change border color on focus */
+    border-radius: 5px; /* Slightly rounded corners */
+    padding: 10px; /* Padding inside inputs */
+}
+
+.form-control:focus {
+    border-color: #007bff; /* Change border color on focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add focus shadow */
+}

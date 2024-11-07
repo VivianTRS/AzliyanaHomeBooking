@@ -1,0 +1,89 @@
+    /* Custom Styles for Breadcrumb */
+    .breadcrumb-item a {
+        color: #228500; /* Green color for links in breadcrumb */
+      }
+      .breadcrumb-item.active {
+        color: #228500; /* Green color for the active breadcrumb item */
+      }
+      /* Add background image for the banner */
+      .blog-banner-area {
+        position: relative; /* Set position to relative for pseudo-element */
+        overflow: hidden; /* Hide overflow to prevent bleed */
+        height: 400px; /* Set a height for the banner */
+      }
+      .blog-banner-area::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url('../img/banner-background.jpg'); /* Path to your background image */
+        background-size: cover; /* Cover the entire section */
+        background-position: center; /* Center the image */
+        z-index: 1; /* Place behind the text */
+      }
+      .blog-banner-area .banner-content {
+        position: relative; /* Position text above the blurred background */
+        z-index: 2; /* Place text above the blurred image */
+        color: white; /* Change text color for better contrast */
+        display: flex; /* Use flexbox for centering */
+        align-items: center; /* Center vertically */
+        justify-content: center; /* Center horizontally */
+        flex-direction: column; /* Stack items vertically */
+        height: 200%; /* Full height of the banner */
+        text-align: center; /* Center text */
+      }
+  
+      .blog-banner-area .banner-content h1 {
+        color: white; /* Set the H1 color to white */
+      }
+  
+      /* Custom Styles for Breadcrumb Container */
+      .breadcrumb-container {
+        text-align: center; /* Center the breadcrumb links */
+        margin-top: 20px; /* Space between heading and breadcrumb */
+      }
+      .breadcrumb {
+        display: inline-block; /* Keep the breadcrumb inline for better centering */
+      }
+  
+      /* Styles for Vision and Mission Boxes */
+      .vision-box, .mission-box {
+        background-color: #f9f9f9; /* Light background color */
+        border: 1px solid #ddd; /* Border with light gray color */
+        padding: 20px; /* Padding inside the box */
+        border-radius: 10px; /* Rounded corners */
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+        margin-bottom: 20px; /* Space between boxes */
+      }
+  
+      .vision-box h2, .mission-box h2 {
+        font-size: 28px; /* Font size for headings */
+        color: #228500; /* Color for headings to match theme */
+      }
+  
+      .vision-box p, .mission-box p {
+        font-size: 16px; /* Font size for paragraphs */
+        color: #333; /* Dark color for paragraph text */
+        margin: 0; /* Remove default margins */
+      }
+  
+     /* Styles for Image Hover Effect */
+     .image-container {
+        overflow: hidden; /* Hide overflow to prevent image from spilling out */
+        border-radius: 10px; /* Match the box's rounded corners */
+        width: 100%; /* Make the image container take full width */
+        height: 200px; /* Set a fixed height for the images */
+      }
+  
+      .image-container img {
+        width: 100%; /* Make image fill the container */
+        height: 100%; /* Make image fill the height of the container */
+        object-fit: cover; /* Ensure the image covers the container */
+        transition: transform 0.3s ease; /* Smooth transition for scaling */
+      }
+  
+      .image-container:hover img {
+        transform: scale(1.05); /* Scale image on hover */
+      }
